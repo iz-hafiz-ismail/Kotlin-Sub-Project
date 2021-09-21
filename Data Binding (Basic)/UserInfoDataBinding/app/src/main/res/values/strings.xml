@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">User Info (Data Binding)</string>
+
+    //Button
+    //Main Activity
+    <string name="next">NEXT</string>
+    <string name="previous">PREVIOUS</string>
+
+    //Tag
+    //Main Activity
+    <string name="tagUserInfo">USER INFO</string>
+    <string name="tagUserId">ID:</string>
+    <string name="tagUserName">NAME:</string>
+    <string name="tagUserAge">Age:</string>
+</resources>
