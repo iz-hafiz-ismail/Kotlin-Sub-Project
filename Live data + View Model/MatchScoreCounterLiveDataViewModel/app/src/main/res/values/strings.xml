@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Match Score Counter (LiveData + ViewModel)</string>
+
+    //Button
+    //Main Activity
+    <string name="btnAdd">+</string>
+    <string name="btnMinus">-</string>
+    <string name="btnReset">RESET</string>
+    //Match Manager
+    <string name="btnStart">START MATCH</string>
+
+    //Tag
+    //Match manager
+    <string name="tagVs">VS</string>
+    <string name="tagInstruction">Insert your team name!</string>
+
+    //Data
+    //Main Activity
+    <string name="dataTeam1">Team 1</string>
+    <string name="dataTeam2">Team 2</string>
+</resources>
