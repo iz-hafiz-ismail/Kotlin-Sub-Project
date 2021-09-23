@@ -3,8 +3,8 @@
 
     //Button
     //Main Activity
-    <string name="next">NEXT</string>
-    <string name="previous">PREVIOUS</string>
+    <string name="btnNext">NEXT</string>
+    <string name="btnPrevious">PREVIOUS</string>
 
     //Tag
     //Main Activity
