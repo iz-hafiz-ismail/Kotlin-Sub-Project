@@ -8,7 +8,7 @@ User Info app will view user data using data binding method. The data can be cha
 
 ### View Model + Live Data
 **[Match Score Counter](https://github.com/iz-hafiz/Kotlin-sub-project/tree/main/Live%20data%20%2B%20View%20Model/MatchScoreCounterLiveDataViewModel)**  
-Match Score Counter is where help user to count score mark. So, it very simple app which use View Model with Live Data with binding method. The reason we using View Model is to avoid lost data during confoguration change. There are may way for configuration change to occur which when screen oriented, language change, keyboard chang and etc. I also make sure that the screen show better placement of object when screen change to landscape mode, that why i have 2 layout for one activity
+Match Score Counter was an app where it help user to count score mark. It is a very simple app which use View Model and Live Data with binding method. The reason we using View Model is to avoid data lost during configuration change. There are many way for configuration change to occur which when screen oriented, language change, keyboard chang and etc. I also make sure that the screen show better placement of object when screen change orientation to landscape mode, that why I have 2 layout for one activity.
 
 <br>
 <br>
