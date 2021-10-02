@@ -22,8 +22,8 @@ mplementation("androidx.lifecycle:lifecycle-livedata:$lifecycle_version")
   
 - View Model Factory is optional same goes to two ways data binding (Use when it appropriate)
 - everything else explain in this project
-- bear in mind this project only for my future refrence. I just put explanation which might future me needed
-- If something wrong with my code or explanation, feel free to tell me. i just a noob guys
+- bear in mind this project only for my future refrence. Nothing fancy, only barebone explanation
+- If something wrong with my code or explanation, feel free to tell me. i am just a noob guys
 
 <br>
 <br>
