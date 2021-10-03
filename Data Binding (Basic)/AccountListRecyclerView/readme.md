@@ -1,7 +1,5 @@
 ### Requirement
 - all method in data binding(Yes, this project use data binding)
-- recycler
-
 
 <br>
 
