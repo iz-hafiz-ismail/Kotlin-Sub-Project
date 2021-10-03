@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Setting Interface (Navigation Architecture Component)</string>
+    <!-- Tag -->
+    <!-- Fragment Image View -->
+    <string name="tagName">Name</string>
+    <string name="tagNameExplaination">This is not your username or pin. This name will be visible to your chat contact.</string>
+    <string name="tagStatus">About</string>
+    <string name="tagContact">Phone</string>
+
+    <!-- Button -->
+    <!-- Fragment Image View -->
+    <string name="btnUpdate">UPDATE PROFILE</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>
