@@ -1,5 +1,5 @@
 # Kotlin sub project
- Collection of my mini sub project for fututre refrences. Some project is list based on main component which made up what i felt important during development process
+ Collection of my mini sub project for future refrences. Some project is list based on main component which I feel important during development process
 
 ## Project List
 ### Data Binding (Basic)
