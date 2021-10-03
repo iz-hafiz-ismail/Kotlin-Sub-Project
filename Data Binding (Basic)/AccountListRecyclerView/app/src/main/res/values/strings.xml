@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Account List (Recycler View)</string>
+    //Tag
+    //main activity
+    <string name="tagHello">Hello,</string>
+    <string name="tagGroup">Group</string>
+    <string name="tagAdd">+ Add</string>
+    <string name="tagBlank">Blank Attr</string>
+</resources>

@@ -5,6 +5,8 @@
 ### Data Binding (Basic)
 **[User Info](https://github.com/iz-hafiz/Kotlin-sub-project/tree/main/Data%20Binding%20(Basic)/UserInfoDataBinding)**  
 User Info app will view user data using data binding method. The data can be change using next and previous button.The goals of this app was to teach me basic concept of data binding
+**[Account List](https://github.com/iz-hafiz/Kotlin-sub-project/tree/main/Data%20Binding%20(Basic)/UserInfoDataBinding)**
+Account List is an app where it list out all acoount. We can add account by clicking add button(account randomly generated with unique id). Account data will be shown in recycler view. If user click on account data list, the data will be delete based on account that has been click.
 
 ### View Model + Live Data
 **[Match Score Counter](https://github.com/iz-hafiz/Kotlin-sub-project/tree/main/Live%20data%20%2B%20View%20Model/MatchScoreCounterLiveDataViewModel)**  
