@@ -1,7 +1,6 @@
 ### Requirement
 - all method in data binding(Yes, this project use data binding)
 - add dependencies in gradle
-
 ```
 def nav_version = "2.3.5"
 
@@ -10,8 +9,7 @@ implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
 implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 ```
 
--add dependencies in build scriptpt inside gradle
-
+- add dependencies in build scriptpt inside gradle
 ```
 buildscript {
     dependencies {
@@ -22,32 +20,31 @@ buildscript {
 ```
 
 - add plugins 
-
 ```
 plugins {
     id("androidx.navigation.safeargs.kotlin")
 }
 ```
 
+<br>
 
-Extra (Optional, only use if you want shared element transition)
-Shared element transition (nav component ver)
+### Optional Requirement
+only use if you want shared element transition effect
 
--add dependency
+#### Shared element transition (nav component ver)
 
+- add dependency
 ```
 implementation 'androidx.navigation:navigation-fragment-ktx:2.2.0'
 ```
 
 - open both layout xml(A and B) and set transition name for target image view
-
 ```
 android:transitionName="sharedElementTransitionStart"
 ```
 
 - code for A class
 add animation stuff when navigate
-
 ```
 	binding.imageView.setOnClickListener{
             val extras = FragmentNavigatorExtras(
@@ -59,7 +56,6 @@ add animation stuff when navigate
 
 - code for B class
 add shared element enter transition in oncreate method
-
 ```
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
