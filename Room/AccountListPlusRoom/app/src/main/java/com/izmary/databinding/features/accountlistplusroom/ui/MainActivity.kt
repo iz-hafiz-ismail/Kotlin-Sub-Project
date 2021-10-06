@@ -22,9 +22,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mainActivityViewModel: MainActivityViewModel
     private lateinit var mainActivityViewModelFactory: MainActivityViewModelFactory
 
-    // Initialize recycler view data (we use array list for this project)
-    private var accountList: MutableList<Account> = mutableListOf<Account>()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
@@ -59,11 +56,9 @@ class MainActivity : AppCompatActivity() {
 
         // Automatically update data as we use Live Data. No need for manual assign data
         mainActivityViewModel.getSaveUAccounts().observe(this, Observer {
-            // Get account data in form of array list
-            accountList = it.toMutableList()
             // Initialize Recycler View Content
             binding.recyclerViewGroup.adapter =
-                RvAccountAdapter(accountList) { selectedAccountData: Account ->
+                RvAccountAdapter(it) { selectedAccountData: Account ->
                     listItemClicked(selectedAccountData)
                 }
         })
