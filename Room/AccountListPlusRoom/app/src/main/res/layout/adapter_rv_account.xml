@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="account"
+            type="com.izmary.databinding.features.accountlistplusroom.db.Account" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_accountGroupAdapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/tv_groupName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@{account.name}"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                tools:text="Rumah" />
+
+            <TextView
+                android:id="@+id/tv_totalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@{`RM ` + String.valueOf(account.amount)}"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                tools:text="RM 24.00" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_accountNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@{String.valueOf(account.number)}"
+                android:textColor="#80FFFFFF"
+                android:textSize="12sp"
+                tools:text="210455494923" />
+
+            <TextView
+                android:id="@+id/tv_accountStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@{account.status}"
+                android:textColor="#80FFFFFF"
+                android:textSize="12sp"
+                tools:text="Balanced" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#66FFFFFF" />
+    </LinearLayout>
+</layout>

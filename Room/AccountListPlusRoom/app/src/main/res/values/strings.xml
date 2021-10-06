@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Account List Plus (Room)</string>
+    // Tag
+    // Main activity
+    <string name="tagHello">Hello,</string>
+    <string name="tagGroup">Group</string>
+    <string name="tagAdd">+ Add</string>
+    <string name="tagBlank">Blank Attr</string>
+
+    // Hint
+    // Main activity
+    <string name="hintAddAccount">Account Name</string>
+</resources>
