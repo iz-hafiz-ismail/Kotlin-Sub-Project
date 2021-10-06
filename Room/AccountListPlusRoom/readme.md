@@ -89,7 +89,7 @@ first account list project to understand how recycler view work
 <br>
 
 ### Extra
-- Currency cant use float or double because of accuracy issue especially for sensitive stuff like currency
+- Currency cant use float or double because of accuracy issue
 
 
 <br>
