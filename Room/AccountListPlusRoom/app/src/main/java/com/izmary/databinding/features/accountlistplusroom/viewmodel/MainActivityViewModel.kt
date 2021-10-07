@@ -46,7 +46,7 @@ class MainActivityViewModel(private val repository: AccountRepository) : ViewMod
                 update(accountToUpdateOrDelete)
             } else {
                 val name = inputName.value!!
-                val amount = 84
+                val amount = 8420
                 val number = java.util.UUID.randomUUID().toString()
                 val status = "Balanced"
                 insert(Account(0, name, amount, number,status))

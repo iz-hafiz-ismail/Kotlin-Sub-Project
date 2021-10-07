@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var mainActivityViewModel: MainActivityViewModel
     private lateinit var mainActivityViewModelFactory: MainActivityViewModelFactory
+    private lateinit var adapter: RvAccountAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,14 +54,16 @@ class MainActivity : AppCompatActivity() {
     private fun initRecyclerView() {
         // Initialize Recycler view
         binding.recyclerViewGroup.layoutManager = LinearLayoutManager(this)
+        adapter = RvAccountAdapter { selectedAccountData: Account ->
+            listItemClicked(selectedAccountData)
+        }
+        binding.recyclerViewGroup.adapter =adapter
 
         // Automatically update data as we use Live Data. No need for manual assign data
         mainActivityViewModel.getSaveUAccounts().observe(this, Observer {
-            // Initialize Recycler View Content
-            binding.recyclerViewGroup.adapter =
-                RvAccountAdapter(it) { selectedAccountData: Account ->
-                    listItemClicked(selectedAccountData)
-                }
+            adapter.setList(it)
+            adapter.notifyDataSetChanged()
+
         })
     }
 
