@@ -15,26 +15,6 @@
 - If something wrong with my code or explanation, feel free to tell me. i am just a noob guys
 
 
-<br>
-
-### Issue
-- I have issue with deleting data as it showing unexisting data sometime when i'm using notifyItemRemoved or notifyDataSetChanged to refresh recycler view
-- When i'm using notifyItemRemoved(Int Index), if all data has been delete, the recycler view stop working properly and caused app to crash when certain behaviour was done 
-- My current fix was recreate recycler view adapter everytime data has been deleted, maybe i will try to find true way to handle this issue  
-
-
-<br>
-
-### Extra
-- I'm overide getItemViewType sub class in recycle view to avoiditem in recycler view switching when scrolling. 
-- From my reading in stack overflow it will effect performance as it kind of defeat the purpose of having recyccler view  
-```
-override fun getItemViewType(position: Int): Int {
-    return position
-}
-```
-
-
 
 <br>
 <br>
