@@ -81,18 +81,6 @@ first account list project to understand how recycler view work
 
 
 <br>
-
-### Issue
-- I prefer to use fragment to make layout for some spesific function to split the component. But I need to find job ASAP haha so i just modified the tutorial
-- The currency data type also need to be fix. I use big decimal at first but sqlite does not have big decimal so I convert it to Int. Later on i will change into proper data type
-
-<br>
-
-### Extra
-- Currency cant use float or double because of accuracy issue
-
-
-<br>
 <br>
 <br>
 <br>
