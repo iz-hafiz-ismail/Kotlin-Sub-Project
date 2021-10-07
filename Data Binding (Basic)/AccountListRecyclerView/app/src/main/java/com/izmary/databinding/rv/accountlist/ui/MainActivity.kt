@@ -45,12 +45,6 @@ class MainActivity : AppCompatActivity() {
     //remove account data
     private fun accountDelete(accountData: AccountData){
         accountDataList.remove(accountData)
-        //recreate adapter as data is delete. better using notifyItemRemoved or notifyDataSetChanged but for my case,
-        //it cause some issue with displaying non existing data in array list
-        binding.recyclerViewGroup.adapter = RvAccountAdapter(accountDataList) { selectedAccountData: AccountData ->
-            accountDelete(
-                selectedAccountData
-            )
-        }
+        binding.recyclerViewGroup.adapter!!.notifyDataSetChanged()
     }
 }

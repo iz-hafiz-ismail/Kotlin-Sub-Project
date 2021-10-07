@@ -9,11 +9,10 @@ import com.izmary.databinding.rv.accountlist.model.AccountData
 
 class RvAccountAdapter(private val accountDataList: List<AccountData>, private val clickListener: (AccountData)->Unit) :
     RecyclerView.Adapter<RvAccountAdapter.ViewHolder>() {
-    private lateinit var binding: AdapterRvAccountBinding
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        binding = AdapterRvAccountBinding.inflate(inflater)
+        val binding: AdapterRvAccountBinding = AdapterRvAccountBinding.inflate(inflater)
         return ViewHolder(binding)
     }
 
@@ -25,12 +24,7 @@ class RvAccountAdapter(private val accountDataList: List<AccountData>, private v
         holder.bind(accountDataList[position],clickListener)
     }
 
-    //avoid from item in recycler view switching when scrolling but effect performance as it kind of disable recycle stuff. But we use it for this
-    override fun getItemViewType(position: Int): Int {
-        return position
-    }
-
-    inner class ViewHolder(binding: AdapterRvAccountBinding) :
+    inner class ViewHolder(val binding: AdapterRvAccountBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(accountData: AccountData, clickListener: (AccountData)->Unit) {
             /* binding.nameSetInLayout = dataType
