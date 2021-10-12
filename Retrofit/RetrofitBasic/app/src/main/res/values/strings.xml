@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Album (Retrofit Basic)</string>
+
+    //tag
+    //MainActivity
+    <string name="tag_title">Fotos</string>
+</resources>
