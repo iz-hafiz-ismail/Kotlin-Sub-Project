@@ -21,7 +21,7 @@ Setting Navigation is simple app to view profile in setting. Actually, it was my
 Account List plus is an app where it list out all account with some improvement. Now we can create account and save on local. Account data can be retrieved even apps is killed and will be shown in recycler view. We will be using Room and Flow to save and emit data. We doesn't replace it completely as at the end of the day, we still need convert it to Live data again to display. Throught this project we also learn interaction of data from database with view from start to end.
 
 ### Retrofit
-- **[Album](https://github.com/iz-hafiz/Kotlin-sub-project/tree/main/Room/AccountListPlusRoom)**  
+- **[Album](https://github.com/iz-hafiz/Kotlin-sub-project/tree/main/Retrofit/RetrofitBasic)**  
 Album is and apps to view photo that has been categorize based on user. As the name of the apps suggest, it only just to view image. I am using Retrofit to retrieve data from API call and Glide for displaying image from URL. The sorce of data is from https://jsonplaceholder.typicode.com/ where they provide user,album and photo but for some reason photo URL doesnt provide meaningful data when been called so i replaced  the source of image with random image from https://picsum.photos/ 
 
 <br>
